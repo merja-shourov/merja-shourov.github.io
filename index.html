@@ -1,15 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Merja Shourov</title>
 
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h2>Hello, This is Merja Shourov a full-stack developer.</h2>    
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo"> <h2>Merja.</h2> </div>
 
-    <script src="script.js"></script>
-</body>
+      <ul class="nav-link">
+        <li>
+          <a href="#"><img src="./assets/e-mail.svg" alt="email" /></a>
+          <ul class="sub-link">
+            <li><a href="#">Copy email to clipboard</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><img src="./assets/linkedin.svg" alt="Linkedin" /></a>
+          <ul class="sub-link">
+            <div class="box"></div>
+            <li><a href="#">Linkedin</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><img src="./assets/resume.svg" alt="Resume" /></a>
+          <ul class="sub-link">
+            <div class="box"></div>
+            <li><a href="#">Resume</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="button">
+        <a href="#">About</a>
+        <a href="#">Work</a>
+      </div>
+    </div>
+
+    <div class="details">
+      <p>Email: <span>merjashourov@gmail.com</span></p>
+      <p>Phone: <span>+880 1719100265</span></p>
+      <p>Location: <span>Mirpur, Dhaka</span></p>
+    </div>
+    <div class="social-media"></div>
+    <div class="projects"></div>
+
+    <script src="./js/script.js"></script>
+  </body>
 </html>
