@@ -1,72 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Merja Shourov</title>
 
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Merja Shourov</title>
 
-    <div class="navbar">
-      <!-- logo -->
-      <div class="logo">
-          <a href="index.html"> Merja <span>Shourov</span> </a>
-      </div>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
-      <!-- Nav link  -->
-      <ul class="nav-link">
-        <li>
-          <a href="#"><img src="./assets/e-mail.svg" alt="email" /></a>
-          <ul class="sub-link first">
-            <li><a href="#">Copy email to clipboard</a></li>
-          </ul>
-        </li>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
 
-        <li>
-          <a href="#"><img src="./assets/twitter.svg" alt="Twitter" /></a>
-          <ul class="sub-link">
-            <li><a href="#">Twitter</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#"><img src="./assets/linkedin.svg" alt="Linkedin" /></a>
-          <ul class="sub-link">
-            <div class="box"></div>
-            <li><a href="#">Linkedin</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#"><img src="./assets/resume.svg" alt="Resume" /></a>
-          <ul class="sub-link">
-            <div class="box"></div>
-            <li><a href="#">Resume</a></li>
-          </ul>
-        </li>
-      </ul>
+  .card {
+    text-align: center;
+  }
 
-      <!-- action button  -->
-      <div class="action">
-        <a href="/about.html">About</a>
-        <a href="/work.html">Work</a>
-      </div>
+  .card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin: 20px 0;
+  }
+
+  .social-links a {
+    color: teal;
+    text-decoration: none;
+    font-size: 26px;
+    padding: 2px 4px;
+    /* background: #898989; */
+    border-radius: 2px;
+    /* border: 2px solid teal; */
+
+  }
+
+  .social-links a:hover {
+    background: teal;
+    color: white;
+  }
+
+  .mail {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .mail input {
+    padding: 5px 8px;
+    box-sizing: border-box;
+    border: none;
+    background: #dcdbdb99;
+    width: 190px;
+    border-bottom: 2px solid teal;
+  }
+
+  .mail button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+
+    border-bottom: 2px solid teal;
+
+  }
+
+  .resume a {
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    border-bottom: 2px solid teal;
+    font-size: 12px;
+  }
+
+  .resume a:hover {
+    background: teal;
+    color: white;
+    transition: 100ms;
+  }
+</style>
+
+<body>
+  <div class="card">
+    <img src="/assets/images/merjaShourov.jpg" alt="logo">
+    <div class="social-links">
+      <a target="_blank" href="https://www.facebook.com/merjashourovv"><i class="fa-brands fa-facebook-f"></i></a>
+      <a target="_blank" href="https://www.linkedin.com/in/merjashourov"><i
+          class="fa-brands fa-square-linkedin"></i></a>
+      <a target="_blank" href="https://www.x.com/merjaShouov"><i class="fa-brands fa-twitter"></i></a>
+      <a target="_blank" href="https://www.github.com/merja-shourov"><i class="fa-brands fa-github"></i></a>
     </div>
-
-
-
-
-
-
-
-    <!-- <div class="details">
-      <p>Email: <span>merjashourov@gmail.com</span></p>
-      <p>Phone: <span>+880 1719100265</span></p>
-      <p>Location: <span>Mirpur, Dhaka</span></p>
+    <div class="mail">
+      <input type="text" value="merjashourov@gmail.com" disabled>
+      <button> <i class="fa-regular fa-copy"></i> </button>
     </div>
-    <div class="social-media"></div>
-    <div class="projects"></div> -->
+    <div class="resume">
+      <a href="#">Resume <i class="fa-solid fa-download"></i> </a>
+    </div>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
 
-    <script src="./js/script.js"></script>
-  </body>
 </html>
