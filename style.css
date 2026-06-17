@@ -30,9 +30,9 @@ h2{
 }
 .side-bar p{
     margin: 0;
-    font-size: 14px;
-    color: #777;
-    font-weight: 500;
+    font-size: 16px;
+    color: #222222;
+    font-weight: 400;
 }
 
 .side-bar a{
@@ -47,20 +47,37 @@ h2{
     object-fit: cover;
     object-position: 80% 20%;
 }
+.side-bar .social-links{
+    margin-top: 20px;
+
+}
 .side-bar .social-links ul{
-    padding: 10px 0;
+    padding: 0;
+    margin: 0;
     display: flex;
+    gap: 14px;
     align-items: flex-start;
     flex-wrap: wrap;
 }
 
 .side-bar .social-links li{
     list-style: none;
+    border: 1px solid #ccc;
+    padding: 6px;
+    border-radius: 4px;
+}
+
+.social-links p{
+    margin: 10px 0;
+}
+.side-bar .social-links li:hover{
+    background-color: #f5f5f5;
+    border-color: #999;
 }
 
 .side-bar .social-links img{
     width: 32px;
-    height: 32px;
+    height: 32px;;
 }
 
 
@@ -75,11 +92,6 @@ h2{
 
 .hire{
     margin: 50px 0;
-}
-
-
-ul li{
-    margin: 10px;
 }
 
 @media (max-width: 768px){
